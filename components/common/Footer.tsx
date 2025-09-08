@@ -1,4 +1,5 @@
 // footer.tsx
+import { FacebookIcon, InstagramIcon, Mail, MapPin, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -72,37 +73,42 @@ const Footer = () => {
         <div className="flex flex-col justify-start">
           <h3 className="text-white text-2xl font-semibold mb-3">Contact</h3>
           <p className="text-base">
-            <a href="mailto:info@himalayanteam.com" className="hover:underline">
-              info@himalayanteam.com
+            <a
+              href="mailto:info@himalayanteam.com"
+              className="hover:underline flex justify-center items-center gap-2"
+            >
+              <Mail size={16} /> info@himalayanteam.com
             </a>
           </p>
-          <p className="text-base mt-2">+977 9841234567</p>
-          <p className="text-base mt-2">Kathmandu, Nepal</p>
+          <p className="text-base mt-2 flex items-center gap-2">
+            {" "}
+            <Phone size={16} />
+            +977 9841234567
+          </p>
+          <p className="text-base mt-2 flex items-center gap-2">
+            {" "}
+            <MapPin size={16} />
+            Kathmandu, Nepal
+          </p>
         </div>
 
         <div className="">
-          <h3 className="text-white text-2xl font-semibold mb-3">Follow Us</h3>
+          <h3 className="text-white text-2xl font-semibold mb-3"> Follow Us</h3>
           <div className="flex space-x-2">
             <a
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span className="text-sm">f</span>
+              <FacebookIcon size={20} />
             </a>
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span className="text-sm">t</span>
-            </a>
+
             <a
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span className="text-sm">@</span>
+              <InstagramIcon size={20} />
             </a>
           </div>
         </div>

@@ -8,11 +8,11 @@ export default function Hero() {
     <section className="relative h-[50rem] w-full flex items-center justify-center text-start text-white">
       {/* 🔹 Background Image */}
       <Image
-        src="/homepage/hero-bg.jpg" // replace with your image
+        src="/gallary/gallary1.png" // replace with your image
         alt="Himalayan Titanz"
         fill
         priority
-        className="object-cover brightness-[0.6]"
+        className="object-cover brightness-[0.4]"
       />
       <div className="relative w-full h-full container">
         {/* 🔹 Overlay content */}

@@ -42,16 +42,17 @@ export default function ContactForm() {
   }
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-[url('/stadium-bg.jpg')] bg-cover bg-center">
-      <Card className="w-full max-w-lg bg-white/80 backdrop-blur-md shadow-xl">
+    <div className="flex justify-center items-center min-h-screen bg-[url('/contact/stadium-bg.jpg')] bg-cover bg-center">
+      <Card className="w-full max-w-lg bg-[#EBECF433] backdrop-blur-md shadow-xl">
         <CardHeader>
-          <CardTitle className="text-center text-xl font-semibold">
+          <CardTitle className="text-center text-background text-3xl font-bold">
             Leave Us Your Info
           </CardTitle>
-          <p className="text-center text-gray-500 text-sm">
+          <p className="text-center text-background text-base">
             and we will get back to you.
           </p>
         </CardHeader>
+        <div className="bg-secondary h-1 w-40 mx-auto" />
         <CardContent>
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
@@ -61,9 +62,12 @@ export default function ContactForm() {
                   name="fullName"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Full Name</FormLabel>
                       <FormControl>
-                        <Input placeholder="Enter your full name" {...field} />
+                        <Input
+                          className="bg-[#FFFFFF]"
+                          placeholder="Full Name*"
+                          {...field}
+                        />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -75,11 +79,11 @@ export default function ContactForm() {
                   name="email"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Email</FormLabel>
                       <FormControl>
                         <Input
+                          className="bg-[#FFFFFF]"
                           type="email"
-                          placeholder="Enter your email"
+                          placeholder="Email*"
                           {...field}
                         />
                       </FormControl>
@@ -94,9 +98,12 @@ export default function ContactForm() {
                 name="subject"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Subject</FormLabel>
                     <FormControl>
-                      <Input placeholder="Subject" {...field} />
+                      <Input
+                        className="bg-[#FFFFFF]"
+                        placeholder="Subject"
+                        {...field}
+                      />
                     </FormControl>
                   </FormItem>
                 )}
@@ -107,10 +114,10 @@ export default function ContactForm() {
                 name="message"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Message</FormLabel>
                     <FormControl>
                       <Textarea
-                        placeholder="Write your message here..."
+                        className="bg-[#FFFFFF]"
+                        placeholder="Message"
                         {...field}
                       />
                     </FormControl>

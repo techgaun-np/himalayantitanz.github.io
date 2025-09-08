@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -10,8 +11,16 @@ import {
 } from "@/components/ui/navigation-menu";
 
 export default function Navbar() {
+  const pathname = usePathname();
+
+  // Function to check if link is active
+  const isActive = (path: string) =>
+    pathname === path
+      ? "text-secondary font-bold underline underline-offset-[28px]"
+      : "hover:text-cyan-400";
+
   return (
-    <header className="w-full   text-white shadow-md">
+    <header className="w-full text-white shadow-md">
       {/* 🔹 Top strip with looping text */}
       <div className="bg-secondary/60 text-black py-1 overflow-hidden relative">
         <div className="whitespace-nowrap animate-marquee font-medium">
@@ -29,19 +38,19 @@ export default function Navbar() {
         <NavigationMenu>
           <NavigationMenuList className="flex gap-6">
             <NavigationMenuItem>
-              <NavigationMenuLink href="/" className="hover:text-secondary">
+              <NavigationMenuLink href="/" className={isActive("/")}>
                 Home
               </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <NavigationMenuLink href="/squad" className="hover:text-cyan-400">
+              <NavigationMenuLink href="/squad" className={isActive("/squad")}>
                 Squad
               </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuLink
                 href="/gallery"
-                className="hover:text-cyan-400"
+                className={isActive("/gallery")}
               >
                 Gallery
               </NavigationMenuLink>
@@ -66,19 +75,19 @@ export default function Navbar() {
         <NavigationMenu>
           <NavigationMenuList className="flex gap-6">
             <NavigationMenuItem>
-              <NavigationMenuLink href="/blog" className="hover:text-cyan-400">
+              <NavigationMenuLink href="/blog" className={isActive("/blog")}>
                 Blog
               </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <NavigationMenuLink href="/about" className="hover:text-cyan-400">
+              <NavigationMenuLink href="/about" className={isActive("/about")}>
                 About
               </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuLink
                 href="/contact"
-                className="hover:text-cyan-400"
+                className={isActive("/contact")}
               >
                 Contact
               </NavigationMenuLink>
