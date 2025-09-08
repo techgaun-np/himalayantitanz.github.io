@@ -3,8 +3,8 @@ import lonelyPenguin from "@/public/blog/lonely-penguin.svg";
 
 export const blogData = [
   {
-    id: 1,
-    mainImage: cappedPenguin,
+    id: "1",
+    image: cappedPenguin,
     title: "Player Spotlight: Rising Star: Meet Our Young Gun",
     description:
       "A closer look at the player making waves with fearless shots and relentless energy.",
@@ -30,8 +30,8 @@ export const blogData = [
     },
   },
   {
-    id: 2,
-    mainImage: lonelyPenguin,
+    id: "2",
+    image: lonelyPenguin,
     title: "Player Spotlight: Rising Star: Meet Our Young Gun",
     description:
       "A closer look at the player making waves with fearless shots and relentless energy.",
@@ -54,8 +54,8 @@ export const blogData = [
     },
   },
   {
-    id: 3,
-    mainImage: cappedPenguin,
+    id: "3",
+    image: cappedPenguin,
     title: "Player Spotlight: Rising Star: Meet Our Young Gun",
     description:
       "A closer look at the player making waves with fearless shots and relentless energy.",
@@ -78,8 +78,8 @@ export const blogData = [
     },
   },
   {
-    id: 4,
-    mainImage: lonelyPenguin,
+    id: "4",
+    image: lonelyPenguin,
     title: "Player Spotlight: Rising Star: Meet Our Young Gun",
     description:
       "A closer look at the player making waves with fearless shots and relentless energy.",
@@ -102,8 +102,8 @@ export const blogData = [
     },
   },
   {
-    id: 5,
-    mainImage: cappedPenguin,
+    id: "5",
+    image: cappedPenguin,
     title: "Player Spotlight: Rising Star: Meet Our Young Gun",
     description:
       "A closer look at the player making waves with fearless shots and relentless energy.",
@@ -126,8 +126,8 @@ export const blogData = [
     },
   },
   {
-    id: 6,
-    mainImage: lonelyPenguin,
+    id: "6",
+    image: lonelyPenguin,
     title: "Player Spotlight: Rising Star: Meet Our Young Gun",
     description:
       "A closer look at the player making waves with fearless shots and relentless energy.",
@@ -150,8 +150,8 @@ export const blogData = [
     },
   },
   {
-    id: 7,
-    mainImage: cappedPenguin,
+    id: "7",
+    image: cappedPenguin,
     title: "Player Spotlight: Rising Star: Meet Our Young Gun",
     description:
       "A closer look at the player making waves with fearless shots and relentless energy.",
@@ -173,8 +173,8 @@ export const blogData = [
     },
   },
   {
-    id: 8,
-    mainImage: lonelyPenguin,
+    id: "8",
+    image: lonelyPenguin,
     title: "Player Spotlight: Rising Star: Meet Our Young Gun",
     description:
       "A closer look at the player making waves with fearless shots and relentless energy.",

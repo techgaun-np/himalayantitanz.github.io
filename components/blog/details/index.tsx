@@ -1,9 +1,15 @@
+import { BlogItem } from "@/types/blog";
 import React from "react";
 
-type Props = {};
-
-const BlogDeatails = () => {
-  return <div className="bg-red-300"></div>;
+const BlogDeatails = ({
+  id,
+  image,
+  title,
+  description,
+  content,
+  author,
+}: BlogItem) => {
+  return <div className="bg-red-300">hello</div>;
 };
 
 export default BlogDeatails;

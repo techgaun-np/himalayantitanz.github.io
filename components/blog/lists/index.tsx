@@ -28,11 +28,11 @@ const BlogList = () => {
           {blogData.map((card, index) => (
             <div key={index} className="w-[350px]">
               <ListCard
-                mainImage={card.mainImage}
+                id={card.id}
+                image={card.image}
                 title={card.title}
                 description={card.description}
                 author={card.author}
-                key={index}
               />
             </div>
           ))}
