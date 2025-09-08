@@ -18,7 +18,7 @@ type Props = {
   className?: string;
 };
 
-const BlogCard = ({
+const ListCard = ({
   mainImage,
   title,
   description,
@@ -74,4 +74,4 @@ const BlogCard = ({
   );
 };
 
-export default BlogCard;
+export default ListCard;

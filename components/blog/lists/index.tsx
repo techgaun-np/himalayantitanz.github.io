@@ -1,8 +1,8 @@
 import React from "react";
-import { Button } from "../ui/button";
 import { ArrowRight } from "lucide-react";
-import BlogCard from "./BlogCard";
-import { blogData } from "@/app/static/blog";
+import { blogData } from "@/static/blog";
+import { Button } from "@/components/ui/button";
+import ListCard from "./ListCard";
 
 const BlogList = () => {
   return (
@@ -27,7 +27,7 @@ const BlogList = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-6 sm:gap-8 md:gap-10">
           {blogData.map((card, index) => (
             <div key={index} className="w-[350px]">
-              <BlogCard
+              <ListCard
                 mainImage={card.mainImage}
                 title={card.title}
                 description={card.description}

@@ -1,6 +1,6 @@
 import React from "react";
 import BlogSectionHero from "./BlogSectionHero";
-import BlogList from "./BlogList";
+import BlogList from "./lists";
 
 const BlogContent = () => {
   return (
