@@ -5,47 +5,75 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative h-[90vh] w-full flex items-center justify-center text-center text-white">
+    <section className="relative h-[50rem] w-full flex items-center justify-center text-start text-white">
       {/* 🔹 Background Image */}
       <Image
         src="/homepage/hero-bg.jpg" // replace with your image
         alt="Himalayan Titanz"
         fill
         priority
-        className="object-cover brightness-75"
+        className="object-cover brightness-[0.6]"
       />
+      <div className="relative w-full h-full container">
+        {/* 🔹 Overlay content */}
+        <div className="absolute top-[50%] left-[15%] z-10 max-w-3xl px-4 -translate-y-1/2">
+          <p className="text-xl md:text-2xl lg:text-3xl font-light">
+            Welcome to the Home of Himalayan Titanz!
+          </p>
 
-      {/* 🔹 Overlay content */}
-      <div className="relative z-10 max-w-3xl px-4">
-        <p className="text-lg md:text-xl font-light">
-          Welcome to the Home of Himalayan Titanz!
-        </p>
+          <h1 className="text-4xl md:text-6xl font-extrabold my-4">
+            HIMALAYAN TITANZ
+          </h1>
 
-        <h1 className="text-4xl md:text-6xl font-extrabold my-4">
-          HIMALAYAN TITANZ
-        </h1>
+          <p className="text-base md:text-lg text-gray-200 mb-6">
+            Discover our players, relive the action, and join the Titanz journey
+          </p>
 
-        <p className="text-base md:text-lg text-gray-200 mb-6">
-          Discover our players, relive the action, and join the Titanz journey
-        </p>
+          {/* Buttons */}
+          <div className="flex gap-4 justify-start">
+            <Button size={"xl"} variant={"secondary"}>
+              Check Highlights
+            </Button>
+            <Button size={"xl"} variant="tertiary">
+              Meet the Squad
+            </Button>
+          </div>
+        </div>
 
-        {/* Buttons */}
-        <div className="flex gap-4 justify-center">
-          <Button className="bg-cyan-500 text-black hover:bg-cyan-400">
-            Check Highlights
-          </Button>
-          <Button
-            variant="outline"
-            className="text-white border-cyan-500 hover:bg-cyan-500 hover:text-black"
+        {/* 🔹 Decorative cyan shapes */}
+        <div className="absolute top-[26%] -translate-y-1/2 left-[10%]">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="380"
+            height="116"
+            viewBox="0 0 380 116"
+            fill="none"
           >
-            Meet the Squad
-          </Button>
+            <path
+              d="M6 65.8041V6H368L292 109.5"
+              stroke="#0EEFFF"
+              strokeWidth="12"
+              strokeLinecap="round"
+            />
+          </svg>
+        </div>
+        <div className="absolute bottom-[15%] -translate-y-1/2 left-[10%]">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="380"
+            height="105"
+            viewBox="0 0 380 105"
+            fill="none"
+          >
+            <path
+              d="M77.6257 6.3418L12 98.4295H374V41.2716"
+              stroke="#0EEFFF"
+              strokeWidth="12"
+              strokeLinecap="round"
+            />
+          </svg>
         </div>
       </div>
-
-      {/* 🔹 Decorative cyan shapes */}
-      <div className="absolute top-20 left-10 w-12 h-12 border-t-4 border-l-4 border-cyan-500"></div>
-      <div className="absolute bottom-20 right-10 w-12 h-12 border-b-4 border-r-4 border-cyan-500"></div>
     </section>
   );
 }

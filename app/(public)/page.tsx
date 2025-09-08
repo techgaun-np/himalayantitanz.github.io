@@ -1,9 +1,13 @@
+import FieldCardCarousel from "@/components/homepage/FieldCardCrousel";
 import Hero from "@/components/homepage/Hero";
+import Sponsers from "@/components/homepage/Sponsers";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center">
+    <div>
       <Hero />
+      <FieldCardCarousel />
+      <Sponsers />
     </div>
   );
 }

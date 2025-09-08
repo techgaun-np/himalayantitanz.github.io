@@ -11,9 +11,9 @@ import {
 
 export default function Navbar() {
   return (
-    <header className="w-full bg-[#0a1a1a] text-white shadow-md">
+    <header className="w-full   text-white shadow-md">
       {/* 🔹 Top strip with looping text */}
-      <div className="bg-cyan-500 text-black py-1 overflow-hidden relative">
+      <div className="bg-secondary/60 text-black py-1 overflow-hidden relative">
         <div className="whitespace-nowrap animate-marquee font-medium">
           ⚡ Welcome to Himalayan Titans! | Join our Squad Today! | Stay tuned
           for updates ⚡
@@ -21,16 +21,17 @@ export default function Navbar() {
       </div>
 
       {/* 🔹 Navbar */}
-      <nav className="flex items-center justify-between px-6 py-3">
+      <nav
+        style={{ fontFamily: "Bebas Neue" }}
+        className="flex bg-primary/60 absolute z-20 w-full uppercase items-center justify-center px-6 py-1"
+      >
         {/* Left Links */}
         <NavigationMenu>
           <NavigationMenuList className="flex gap-6">
             <NavigationMenuItem>
-              <Link href="/" passHref>
-                <NavigationMenuLink className="hover:text-cyan-400">
-                  Home
-                </NavigationMenuLink>
-              </Link>
+              <NavigationMenuLink href="/" className="hover:text-secondary">
+                Home
+              </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuLink href="/squad" className="hover:text-cyan-400">
@@ -49,13 +50,14 @@ export default function Navbar() {
         </NavigationMenu>
 
         {/* Center Logo */}
-        <div className="flex-shrink-0">
+        <div className="flex-shrink-0 md:mx-12">
           <Link href="/">
             <Image
               src="/logo.png"
               alt="Himalayan Titans"
               width={60}
               height={60}
+              className="w-12 h-12 md:w-20 md:h-20"
             />
           </Link>
         </div>
