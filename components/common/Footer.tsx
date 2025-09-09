@@ -1,6 +1,13 @@
 "use client";
 
-import { FacebookIcon, InstagramIcon, Mail, MapPin, Phone } from "lucide-react";
+import {
+  FacebookIcon,
+  InstagramIcon,
+  Mail,
+  MapPin,
+  Music2,
+  Phone,
+} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -22,7 +29,7 @@ const Footer = () => {
               className="h-20 w-20 md:h-28 md:w-28"
             />
             <div>
-              <p className="text-base italic">Powered by Techgun Nepal</p>
+              <p className="text-base italic">Powered by Techgaun Nepal</p>
             </div>
           </div>
           <div>
@@ -99,15 +106,21 @@ const Footer = () => {
           </h3>
           <div className="flex space-x-2">
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/profile.php?id=61579319049820"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FacebookIcon size={20} />
             </a>
-
             <a
-              href="https://instagram.com"
+              href="https://www.twitter.com/himalayantitanz/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Music2 size={20} />
+            </a>
+            <a
+              href="https://www.instagram.com/himalayantitanz/"
               target="_blank"
               rel="noopener noreferrer"
             >
