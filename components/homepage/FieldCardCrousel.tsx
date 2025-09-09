@@ -1,9 +1,8 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { motion } from "framer-motion";
+import { ChevronRight } from "lucide-react";
 import { useRef } from "react";
 
 type FieldCard = {
@@ -55,12 +54,6 @@ export default function FieldCardCarousel() {
     }
   };
 
-  const scrollPrev = () => {
-    if (carouselRef.current) {
-      carouselRef.current.scrollBy({ left: -260, behavior: "smooth" });
-    }
-  };
-
   return (
     <div className="w-full bg-card py-10">
       <h2 className="text-3xl font-bold text-white mb-6 text-center">
@@ -68,16 +61,6 @@ export default function FieldCardCarousel() {
       </h2>
 
       <div className="relative">
-        {/* Previous Button */}
-        {/* <Button
-          size="icon"
-          variant="outline"
-          onClick={scrollPrev}
-          className="absolute left-2 top-1/2 -translate-y-1/2 z-10 rounded-full shadow-md"
-        >
-          <ChevronLeft />
-        </Button> */}
-
         {/* Carousel */}
         <motion.div
           ref={carouselRef}
