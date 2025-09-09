@@ -8,7 +8,7 @@ const GallaryImage = () => {
         <h1 className="text-xl md:text-3xl text-center font-bold text-white">
           Glimpses
         </h1>
-        <div className="flex mt-4 gap-2">
+        <div className="md:flex mt-4 gap-2">
           {/* Map through your images here */}
           <div>
             <GallaryCommonImageContainer
@@ -68,7 +68,7 @@ const GallaryImage = () => {
             />
           </div>
         </div>
-        <div className="flex mt-3 gap-2">
+        <div className="md:flex mt-3 gap-2">
           <GallaryCommonImageContainer
             title="TU Ground"
             description="Premier Cricket League"
@@ -85,7 +85,7 @@ const GallaryImage = () => {
             imageClassName="h-[300px] overflow-hidden"
           />
         </div>
-        <div className="flex mt-3 gap-2">
+        <div className="md:flex mt-3 gap-2">
           <GallaryCommonImageContainer
             title="TU Ground"
             description="Premier Cricket League"
