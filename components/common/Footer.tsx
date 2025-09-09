@@ -93,7 +93,7 @@ const Footer = () => {
         </div>
 
         {/* Socials */}
-        <div className="flex md:flex-col justify-center items-center w-full gap-2 md:flex-1">
+        <div className="flex md:flex-col md:items-center justify-center mx-auto gap-2 ">
           <h3 className="text-white text-xl md:text-2xl font-semibold mb-3">
             Follow Us
           </h3>
