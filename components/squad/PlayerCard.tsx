@@ -71,70 +71,72 @@ const PlayerCard = () => {
   };
 
   const variants = {
-    initial: { y: 100, opacity: 0 },
-    animate: { y: 0, opacity: 1 },
-    exit: { y: -100, opacity: 0 },
+    initial: { y: -600 },
+    animate: { y: 0 },
+    exit: { y: 600 },
   };
 
   return (
     <div className="relative overflow-hidden w-full bg-card ">
-      <div className="relative flex justify-between container">
+      <div className="relative grid-cols-2 grid md:flex justify-between container">
         {/* Background Design (Static) */}
-        <div className="flex z-20 -translate-y-[10%] max-w-lg items-center translate-x-[10%] flex-col justify-center">
-          <h1 className="text-white text-6xl font-medium uppercase">
+        <div className="flex z-20 md:-translate-y-[10%] md:max-w-lg items-center md:translate-x-[10%] flex-col justify-center">
+          <h1 className="text-white  text-xl md:text-6xl font-medium uppercase">
             {selectedPlayer.title}
           </h1>
-          <p className="text-[#FFFFFFCC] uppercase font-semibold text-3xl">
+          <p className="text-[#FFFFFFCC] uppercase  font-semibold text-lg md:text-3xl">
             {selectedPlayer.name}
           </p>
-          <p className="text-primary-foreground text-lg">
+          <p className="text-primary-foreground ml-4  text-md md:text-lg">
             {selectedPlayer.desc}
           </p>
         </div>
 
         {/* Main Player Image with Animation */}
-        <div className="relative  h-[650px] flex justify-center items-end z-20">
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={selectedPlayer.id}
-              variants={variants}
-              initial="initial"
-              animate="animate"
-              exit="exit"
-              transition={{ duration: 0.5 }}
-              className="flex flex-col justify-end h-full"
-            >
-              <Image
-                src={selectedPlayer.image}
-                alt={selectedPlayer.name}
-                width={300}
-                height={300}
-                className="z-10"
-              />
-            </motion.div>
-          </AnimatePresence>
+        <div className="relative h-[300px] md:h-[650px] flex justify-center items-end">
+          <div className="z-20">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={selectedPlayer.id}
+                variants={variants}
+                initial="initial"
+                animate="animate"
+                exit="exit"
+                transition={{ duration: 0.5 }}
+                className="flex flex-col justify-end h-full"
+              >
+                <Image
+                  src={selectedPlayer.image}
+                  alt={selectedPlayer.name}
+                  width={300}
+                  height={300}
+                  className="z-10 w-[150px] md:w-[300px]"
+                />
+              </motion.div>
+            </AnimatePresence>
+          </div>
           <div className="absolute top-0 z-0 flex gap-2">
-            <div className="bg-secondary-foreground h-[650px] w-20" />
-            <div className="bg-secondary-foreground h-[650px] w-20" />
-            <div className="bg-secondary-foreground h-[650px] w-20" />
-            <div className="bg-secondary-foreground h-[650px] w-20" />
+            <div className="bg-secondary-foreground h-[300px] md:h-[650px] w-10 md:w-20" />
+            <div className="bg-secondary-foreground h-[300px] md:h-[650px] w-10 md:w-20" />
+            <div className="bg-secondary-foreground h-[300px] md:h-[650px] w-10 md:w-20" />
+            <div className="bg-secondary-foreground h-[300px] md:h-[650px] w-10 md:w-20" />
           </div>
         </div>
 
         {/* Player Circles */}
-        <div className=" grid h-max mt-12  grid-cols-2 gap-4">
+        <div className=" grid h-max mt-12 z-20 col-span-2 mx-4 ml-4 grid-cols-4 md:grid-cols-2 gap-2 md:gap-4">
           {players.map((player) => (
             <div
               key={player.id}
               onClick={() => handlePlayerClick(player)}
-              className="cursor-pointer  border-2 border-white hover:border-yellow-300 transition w-24 h-24 rounded-full overflow-hidden"
+              className="cursor-pointer flex justify-center items-center border-2 border-white hover:border-yellow-300 transition w-16 md:w-24 h-16 md:h-24 rounded-full overflow-hidden"
             >
               <Image
                 src={player.image}
                 alt={player.name}
                 width={80}
                 height={80}
-                className=" w-16 "
+                className=" w-10 md:w-16 "
               />
             </div>
           ))}
@@ -149,7 +151,7 @@ const PlayerCard = () => {
           PLAYERS
         </h1>
       </div>
-      <div className="absolute h-[700px] rotate-[-10deg] opacity-75 z-0 top-0 left-0 w-full overflow-hidden">
+      <div className="absolute h-[700px] rotate-[-10deg] opacity-75 z-0 top-[-100px] md:top-0 left-0 w-full overflow-hidden">
         <Image
           src="/nepal-map.svg"
           alt="gradient"
