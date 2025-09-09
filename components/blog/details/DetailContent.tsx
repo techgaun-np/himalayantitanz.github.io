@@ -1,5 +1,6 @@
+"use client";
 import React from "react";
-import { BlogContent, BlogItem } from "@/types/blog";
+import { BlogContent } from "@/types/blog";
 import { blogData } from "@/static/blog";
 import Image from "next/image";
 import PopularCard from "./PopularCard";
