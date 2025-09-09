@@ -20,7 +20,7 @@ const PopularCard = ({
   return (
     <div
       className={cn(
-        "flex gap-2 rounded overflow-hidden shadow-lg bg-white h-32 cursor-pointer",
+        "flex gap-2 rounded overflow-hidden shadow-lg bg-white h-32",
         className
       )}
     >
@@ -30,14 +30,16 @@ const PopularCard = ({
           alt={title}
           layout="fill"
           objectFit="cover"
-          className="rounded-t"
+          className="rounded-t cursor-pointer"
         />
       </div>
       <div className="flex flex-col py-2">
         <div className="font-bold text-richBlack">{title}</div>
         <p className="text-richBlack">{description.slice(0, 35)}</p>
         {views && (
-          <div className="text-sm text-deepTeal italic">Views: {views}</div>
+          <div className="text-sm text-deepTeal italic h-full flex items-end">
+            Views: {views}
+          </div>
         )}
       </div>
     </div>

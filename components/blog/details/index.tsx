@@ -1,5 +1,5 @@
-import { BlogItem } from "@/types/blog";
 import React from "react";
+import { BlogItem } from "@/types/blog";
 import DetailHero from "./DetailHero";
 import DetailContent from "./DetailContent";
 

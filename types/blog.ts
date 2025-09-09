@@ -23,3 +23,8 @@ export type BlogItem = {
 };
 
 export type BlogData = BlogItem[];
+
+export enum BlogListType {
+  LIST = "list",
+  POPULAR = "popular",
+}
