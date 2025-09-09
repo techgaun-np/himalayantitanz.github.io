@@ -5,49 +5,49 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative h-[50rem] w-full flex items-center justify-center text-start text-white">
+    <section className="relative h-[40rem] md:h-[50rem] w-full flex items-center justify-center text-start text-white">
       {/* 🔹 Background Image */}
       <Image
-        src="/homepage/hero-bg.jpg" // replace with your image
+        src="/gallary/gallary1.png"
         alt="Himalayan Titanz"
         fill
         priority
-        className="object-cover brightness-[0.6]"
+        className="object-cover brightness-[0.4]"
       />
-      <div className="relative w-full h-full container">
+
+      <div className="relative w-full h-full container mx-auto px-4">
         {/* 🔹 Overlay content */}
-        <div className="absolute top-[50%] left-[15%] z-10 max-w-3xl px-4 -translate-y-1/2">
-          <p className="text-xl md:text-2xl lg:text-3xl font-light">
+        <div className="absolute top-1/2 left-1/2 md:left-[15%] transform -translate-y-1/2 -translate-x-1/2 md:translate-x-0 max-w-lg md:max-w-3xl text-center md:text-left">
+          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-light">
             Welcome to the Home of Himalayan Titanz!
           </p>
 
-          <h1 className="text-4xl md:text-6xl font-extrabold my-4">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold my-4">
             HIMALAYAN TITANZ
           </h1>
 
-          <p className="text-base md:text-lg text-gray-200 mb-6">
+          <p className="text-sm sm:text-base md:text-lg text-gray-200 mb-6">
             Discover our players, relive the action, and join the Titanz journey
           </p>
 
           {/* Buttons */}
-          <div className="flex gap-4 justify-start">
-            <Button size={"xl"} variant={"secondary"}>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+            <Button size="lg" variant="secondary" className="w-full sm:w-auto">
               Check Highlights
             </Button>
-            <Button size={"xl"} variant="tertiary">
+            <Button size="lg" variant="tertiary" className="w-full sm:w-auto">
               Meet the Squad
             </Button>
           </div>
         </div>
 
         {/* 🔹 Decorative cyan shapes */}
-        <div className="absolute top-[26%] -translate-y-1/2 left-[10%]">
+        <div className="absolute hidden md:flex top-[26%] -translate-y-1/2 left-[10%]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="380"
-            height="116"
             viewBox="0 0 380 116"
             fill="none"
+            className="w-full h-auto"
           >
             <path
               d="M6 65.8041V6H368L292 109.5"
@@ -57,13 +57,12 @@ export default function Hero() {
             />
           </svg>
         </div>
-        <div className="absolute bottom-[15%] -translate-y-1/2 left-[10%]">
+        <div className="absolute hidden md:flex bottom-[15%] -translate-y-1/2 left-[10%]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="380"
-            height="105"
             viewBox="0 0 380 105"
             fill="none"
+            className="w-full h-auto"
           >
             <path
               d="M77.6257 6.3418L12 98.4295H374V41.2716"
