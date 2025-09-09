@@ -16,7 +16,7 @@ export const blogData = [
         "Rebounds: 10 per game",
         "Assists: 5 per game",
       ],
-      images: ["cappedPenguin", "lonelyPenguin"],
+      images: [cappedPenguin, lonelyPenguin],
       matchHighlight: [
         "Game-winning shot in the final quarter",
         "Defensive play of the match",
@@ -28,6 +28,7 @@ export const blogData = [
       date: "24 Jul 2025",
       readTime: "7 min",
     },
+    isPopular: false,
   },
   {
     id: "2",
@@ -43,7 +44,7 @@ export const blogData = [
         "Rebounds: 8 per game",
         "Assists: 6 per game",
       ],
-      images: ["lonelyPenguin", "cappedPenguin"],
+      images: [lonelyPenguin, cappedPenguin],
       matchHighlight: ["Clutch three-pointer", "Steal leading to fast break"],
     },
     author: {
@@ -52,6 +53,7 @@ export const blogData = [
       date: "25 Jul 2025",
       readTime: "8 min",
     },
+    isPopular: false,
   },
   {
     id: "3",
@@ -67,7 +69,7 @@ export const blogData = [
         "Rebounds: 9 per game",
         "Assists: 4 per game",
       ],
-      images: ["cappedPenguin", "lonelyPenguin"],
+      images: [cappedPenguin, lonelyPenguin],
       matchHighlight: ["Double-double performance", "Key block in overtime"],
     },
     author: {
@@ -76,6 +78,7 @@ export const blogData = [
       date: "26 Jul 2025",
       readTime: "6 min",
     },
+    isPopular: true,
   },
   {
     id: "4",
@@ -91,7 +94,7 @@ export const blogData = [
         "Rebounds: 11 per game",
         "Assists: 3 per game",
       ],
-      images: ["lonelyPenguin", "cappedPenguin"],
+      images: [lonelyPenguin, cappedPenguin],
       matchHighlight: ["Game-saving rebound", "High-flying dunk"],
     },
     author: {
@@ -100,6 +103,7 @@ export const blogData = [
       date: "27 Jul 2025",
       readTime: "9 min",
     },
+    isPopular: true,
   },
   {
     id: "5",
@@ -115,7 +119,7 @@ export const blogData = [
         "Rebounds: 7 per game",
         "Assists: 5 per game",
       ],
-      images: ["cappedPenguin", "lonelyPenguin"],
+      images: [cappedPenguin, lonelyPenguin],
       matchHighlight: ["Critical free throws", "Defensive stop in clutch time"],
     },
     author: {
@@ -124,6 +128,7 @@ export const blogData = [
       date: "28 Jul 2025",
       readTime: "7 min",
     },
+    isPopular: true,
   },
   {
     id: "6",
@@ -139,7 +144,7 @@ export const blogData = [
         "Rebounds: 10 per game",
         "Assists: 7 per game",
       ],
-      images: ["lonelyPenguin", "cappedPenguin"],
+      images: [lonelyPenguin, cappedPenguin],
       matchHighlight: ["Triple-double achievement", "Game-tying layup"],
     },
     author: {
@@ -148,6 +153,7 @@ export const blogData = [
       date: "29 Jul 2025",
       readTime: "8 min",
     },
+    isPopular: true,
   },
   {
     id: "7",
@@ -162,7 +168,7 @@ export const blogData = [
         "Rebounds: 8 per game",
         "Assists: 6 per game",
       ],
-      images: ["cappedPenguin", "lonelyPenguin"],
+      images: [cappedPenguin, lonelyPenguin],
       matchHighlight: [" buzzer-beater shot", "Team-leading steals"],
     },
     author: {
@@ -171,6 +177,7 @@ export const blogData = [
       date: "30 Jul 2025",
       readTime: "6 min",
     },
+    isPopular: true,
   },
   {
     id: "8",
@@ -185,7 +192,7 @@ export const blogData = [
         "Rebounds: 9 per game",
         "Assists: 5 per game",
       ],
-      images: ["lonelyPenguin", "cappedPenguin"],
+      images: [lonelyPenguin, cappedPenguin],
       matchHighlight: ["Overtime heroics", "Defensive hustle"],
     },
     author: {
@@ -194,5 +201,6 @@ export const blogData = [
       date: "31 Jul 2025",
       readTime: "7 min",
     },
+    isPopular: true,
   },
 ];

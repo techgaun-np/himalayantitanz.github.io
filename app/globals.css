@@ -45,6 +45,8 @@
   --color-baby-aqua: var(--baby-aqua);
   --color-olive-drab: var(--olive-drab);
   --color-cloudCream: var(--cloudCream);
+  --color-deepTeal: #005f66;
+  --color-richBlack: #003033;
 }
 
 :root {
@@ -83,6 +85,7 @@
   --baby-aqua: #e5fdff;
   --olive-drab: #454230;
   --cloudCream: #ebebe9;
+  --deepTeal: #005f66;
 }
 
 .dark {

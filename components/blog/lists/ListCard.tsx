@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import userImg from "@/public/common/user.png";
 import { cn } from "@/lib/utils";
-import { BlogAuthor, BlogItem } from "@/types/blog";
+import { BlogAuthor } from "@/types/blog";
 import Link from "next/link";
 
 type Props = {

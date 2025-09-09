@@ -19,6 +19,7 @@ export type BlogItem = {
   description: string;
   content: BlogContent;
   author: BlogAuthor;
+  isPopular?: boolean;
 };
 
 export type BlogData = BlogItem[];
