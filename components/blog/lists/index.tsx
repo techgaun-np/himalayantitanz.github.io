@@ -19,10 +19,6 @@ const BlogList = ({ listData }: Props) => {
         {/* view all buttons */}
         <div className="flex w-full justify-center md:justify-start mb-8 gap-2 items-center text-white">
           <p className="text-baby-aqua text-[1.25rem]">Latest</p>
-          {/* <Button className="flex bg-transparent hover:bg-transparent shadow-none text-white">
-            <p className="text-baby-aqua text-[0.75rem]">View all</p>
-            <ArrowRight />
-          </Button> */}
         </div>
 
         {/* blog cards - Using grid for better control */}
