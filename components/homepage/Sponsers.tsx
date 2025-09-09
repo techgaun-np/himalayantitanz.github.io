@@ -39,7 +39,7 @@ const Sponsers = () => {
           {sponsors.map((sponsor) => (
             <div
               key={sponsor.name}
-              className="bg-white rounded-lg shadow-md flex items-center justify-center p-4 w-[200px]"
+              className="bg-white rounded-lg shadow-md flex items-center justify-center p-4 w-[120px] md:w-[200px]"
             >
               <Image
                 src={sponsor.logo}
