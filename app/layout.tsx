@@ -17,6 +17,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "HimalayanTitanz",
   description: "Official website of HimalayanTitanz Cricket Club",
+  icons: {
+    icon: "/logo.png",
+  },
 };
 
 export default function RootLayout({
