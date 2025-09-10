@@ -62,7 +62,7 @@ export default function Navbar() {
                 <NavigationMenuItem key={link.href}>
                   <NavigationMenuLink
                     href={link.href}
-                    className={cn(isActive(link.href))}
+                    className={cn(isActive(link.href), "font-bebas")}
                   >
                     {link.label}
                   </NavigationMenuLink>
@@ -93,7 +93,7 @@ export default function Navbar() {
                 <NavigationMenuItem key={link.href}>
                   <NavigationMenuLink
                     href={link.href}
-                    className={isActive(link.href)}
+                    className={cn(isActive(link.href), "font-bebas")}
                   >
                     {link.label}
                   </NavigationMenuLink>
@@ -132,7 +132,7 @@ export default function Navbar() {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className={isActive(link.href)}
+                    className={cn(isActive(link.href), "font-bebas")}
                     onClick={() => setDrawerOpen(false)}
                   >
                     {link.label}
