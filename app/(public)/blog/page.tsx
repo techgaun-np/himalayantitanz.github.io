@@ -1,11 +1,12 @@
+"use client";
+
+import { Suspense } from "react";
 import BlogContent from "@/components/blog";
 
-const page = () => {
+export default function BlogPage() {
   return (
-    <div>
+    <Suspense fallback={<div>Loading...</div>}>
       <BlogContent />
-    </div>
+    </Suspense>
   );
-};
-
-export default page;
+}

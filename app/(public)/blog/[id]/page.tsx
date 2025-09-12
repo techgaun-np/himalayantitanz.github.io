@@ -6,7 +6,7 @@ import BlogDeatails from "@/components/blog/details";
 import { blogData } from "@/static/blog";
 import { BlogItem } from "@/types/blog";
 
-const page = () => {
+const BlogPage = () => {
   const params = useParams();
   const [isLoading, setIsLoading] = useState(true);
   const [post, setPost] = useState<BlogItem | null>(null);
@@ -41,4 +41,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default BlogPage;
