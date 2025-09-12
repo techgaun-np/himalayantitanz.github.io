@@ -1,15 +1,16 @@
-import BlogDeatails from "@/components/blog/details";
+import BlogDetails from "@/components/blog/details";
 import { blogData } from "@/static/blog";
+
 export async function generateStaticParams() {
   return blogData.map((post) => ({
     slug: post.id,
   }));
 }
-
-export default function Page({
-  params: { slug },
+export default async function Page({
+  params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  return <BlogDeatails id={slug} />;
+  const { slug } = await params;
+  return <BlogDetails id={slug} />;
 }
