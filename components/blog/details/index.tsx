@@ -1,22 +1,20 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import { useParams } from "next/navigation";
 import { blogData } from "@/static/blog";
 import { BlogItem } from "@/types/blog";
-import DetailHero from "./DetailHero";
+import { useEffect, useState } from "react";
 import DetailContent from "./DetailContent";
+import DetailHero from "./DetailHero";
 
-const BlogDeatails = () => {
-  const params = useParams(); // get id from URL
+const BlogDetails = ({ id }: { id: string }) => {
   const [post, setPost] = useState<BlogItem | null>(null);
 
   useEffect(() => {
-    if (params?.id) {
-      const found = blogData.find((b) => b.id.toString() === params.id);
+    if (id) {
+      const found = blogData.find((b) => b.id.toString() === id);
       setPost(found || null);
     }
-  }, [params?.id]);
+  }, [id]);
 
   if (!post) return <div>Loading or blog not found...</div>;
 
@@ -30,9 +28,10 @@ const BlogDeatails = () => {
         date={post.author.date}
         readTime={post.author.readTime}
       />
+
       <DetailContent content={post.content} />
     </div>
   );
 };
 
-export default BlogDeatails;
+export default BlogDetails;
