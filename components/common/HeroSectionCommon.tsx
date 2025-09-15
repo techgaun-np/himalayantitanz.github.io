@@ -24,7 +24,7 @@ const HeroSectionCommon: React.FC<HeroSectionProps> = ({
         alt={title}
         fill
         priority
-        className="object-cover"
+        className="object-cover object-top"
       />
 
       {/* Overlay */}

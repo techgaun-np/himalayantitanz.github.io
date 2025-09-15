@@ -4,9 +4,9 @@ import HeroSectionCommon from "../common/HeroSectionCommon";
 const SquadPageHero = () => {
   return (
     <HeroSectionCommon
-      imageSrc="/squad/group.jpg"
+      imageSrc="/gallary/gallary1.png"
       title="Our Squad"
-      description="Meet the fierce warriors who carry the spirit of the Himalayas onto every cricket field. Each player brings their unique skills and unwavering passion to the Titanz legacy."
+      description="Meet the fierce warriors who bring the spirit of the Himalayas to every game. Each player adds their unique skills and passion to the Titanz legacy."
     />
   );
 };

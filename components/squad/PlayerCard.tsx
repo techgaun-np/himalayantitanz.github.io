@@ -10,57 +10,71 @@ const PlayerCard = () => {
       id: 1,
       name: "BHUWAN KARKI",
       title: "All-rounder",
-      desc: "A consistent performer with both bat and ball, known for his sharp fielding and team spirit.",
+      desc: "Proud Marquee player, representing Himalayan Titanz in ISL 2025! A left-arm spinner and reliable all-rounder, he brings valuable experience, leadership, and strength as one of the senior members of our squad. We are truly honored to have him with us.",
       image: "/player/player1.png",
     },
     {
       id: 2,
       name: "TAPENDRA BISTA",
       title: "Bowler",
-      desc: "A pace bowler with the ability to swing the ball both ways and break crucial partnerships.",
+      desc: "A talented left-arm medium pacer, ready to bowl with precision and power in ISL 2025 for Himalayan Titanz.",
       image: "/player/player2.png",
     },
     {
       id: 3,
       name: "DINESH BISTA",
       title: "All-rounder",
-      desc: "A reliable middle-order batsman who can chip in with vital overs when needed.",
+      desc: "An experienced all-rounder and hard-hitting powerhouse, ready to make a big impact in ISL 2025 with Himalayan Titanz.",
       image: "/player/player3.png",
     },
     {
       id: 4,
       name: "DEEPAK RAJ JOSHI",
       title: "All-rounder",
-      desc: "Brings balance to the team with aggressive batting and handy off-spin bowling.",
+      desc: "A powerful all-rounder, equally deadly with the bat and the ball, ready to make his mark in ISL 2025 with Himalayan Titanz.",
       image: "/player/player4.png",
     },
     {
       id: 5,
-      name: "HIMAL DAUL YAL",
+      name: "HIMAL DAULYAL",
       title: "Batsman",
-      desc: "Stylish top-order batsman with a solid technique and ability to anchor the innings.",
+      desc: "Rising star who earned his place in the Himalayan Titanz through pure grit, passion, and talent. Ready to make his mark in the ISL 2025.",
       image: "/player/player5.png",
     },
     {
       id: 6,
       name: "LACHHU KARKI",
       title: "All-rounder",
-      desc: "A powerful hitter down the order who can also contribute with medium-pace bowling.",
+      desc: "Dynamic all-rounder! With both bat and ball in his arsenal, he’s ready to bring balance and firepower to the Himalayan Titanz in ISL 2025.",
       image: "/player/player6.png",
     },
     {
       id: 7,
-      name: "SUMAN BISHOW KARMA",
+      name: "SUMAN BISHOWKARMA",
       title: "Bowler",
-      desc: "Specializes in spin bowling and is known for his control and wicket-taking ability.",
+      desc: "A talented right-arm medium pacer, full of promise and ready to showcase his skills in ISL 2025 with Himalayan Titanz.",
       image: "/player/player7.png",
     },
     {
       id: 8,
       name: "DEEPAK BOHARA",
       title: "Batsman",
-      desc: "An aggressive batsman who thrives under pressure and plays attacking shots all around the ground.",
+      desc: "A classic opener who plays with perfect timing and elegance, and an excellent wicketkeeper, ready to shine in ISL 2025 with Himalayan Titanz.",
       image: "/player/player8.png",
+    },
+    {
+      id: 9,
+      name: "DINESH ADHIKARI",
+      title: "All-rounder",
+      desc: "A perfect bowling all-rounder and a hard-hitting batter, this experienced player is ready to deliver big performances in ISL 2025 with Himalayan Titanz.",
+      image: "/player/player9.png",
+    },
+    {
+      id: 10,
+      name: "SHANKAR RANA",
+      title: "Batsman",
+      desc: "An experienced and fearless hard-hitting batsman, he’s set to showcase his explosive batting power in ISL 2025 with Himalayan Titanz.",
+      image: "/player/player10.png",
     },
   ];
 
@@ -110,12 +124,12 @@ const PlayerCard = () => {
                   alt={selectedPlayer.name}
                   width={300}
                   height={300}
-                  className="z-10 w-[150px] md:w-[300px]"
+                  className="z-10 object-cover "
                 />
               </motion.div>
             </AnimatePresence>
           </div>
-          <div className="absolute top-0 z-0 flex gap-2">
+          <div className="absolute top-0 z-0 flex w-full gap-2">
             <div className="bg-secondary-foreground h-[300px] md:h-[650px] w-10 md:w-20" />
             <div className="bg-secondary-foreground h-[300px] md:h-[650px] w-10 md:w-20" />
             <div className="bg-secondary-foreground h-[300px] md:h-[650px] w-10 md:w-20" />
@@ -136,7 +150,7 @@ const PlayerCard = () => {
                 alt={player.name}
                 width={80}
                 height={80}
-                className=" w-10 md:w-16 "
+                className=" w-10 object-top md:w-16 mt-6 "
               />
             </div>
           ))}
