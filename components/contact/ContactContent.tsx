@@ -31,8 +31,9 @@ export default function ContactContent() {
             </div>
             <div>
               <h3 className="font-bold text-sm md:text-lg">Drop Message</h3>
-              <p className="md:text-sm text-[10px]">info@himaliantitan.com</p>
-              <p className="md:text-sm text-[10px]">info@techgaunnepal.com</p>
+              <p className="md:text-sm text-[10px]">
+                himalayantitanz@gmail.com
+              </p>
             </div>
           </div>
 
@@ -42,9 +43,8 @@ export default function ContactContent() {
             </div>
             <div>
               <h3 className="font-bold text-sm md:text-lg">Where to Find Us</h3>
-              <p className="md:text-sm text-[10px]">Chandragiri - 13, Ktm</p>
               <p className="md:text-sm text-[10px]">
-                Another location if there
+                Chandragiri 07, Kathmandu
               </p>
             </div>
           </div>
@@ -69,8 +69,7 @@ export default function ContactContent() {
             </div>
             <div>
               <h3 className="font-bold text-sm md:text-lg">Call Anytime</h3>
-              <p className="md:text-sm text-[10px]">+977 9841123456</p>
-              <p className="md:text-sm text-[10px]">01 4233698</p>
+              <p className="md:text-sm text-[10px]">+977 980897057</p>
             </div>
           </div>
 
@@ -82,8 +81,8 @@ export default function ContactContent() {
               <h3 className="font-bold text-sm md:text-lg">
                 Availability Hours
               </h3>
-              <p className="md:text-sm text-[10px]">Mon - Fri (9AM - 9PM)</p>
-              <p className="md:text-sm text-[10px]">Sat - Sun (9AM - 2PM)</p>
+              <p className="md:text-sm text-[10px]">Mon - Fri (9 AM - 9 PM)</p>
+              <p className="md:text-sm text-[10px]">Sat - Sun (9 AM - 2 PM)</p>
             </div>
           </div>
         </div>

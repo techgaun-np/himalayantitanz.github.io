@@ -57,7 +57,7 @@ export default function FieldCardCarousel() {
   return (
     <div className="w-full bg-card py-10">
       <h2 className="text-3xl font-bold text-white mb-6 text-center">
-        Latest from the Field
+        Latest from the Arena
       </h2>
 
       <div className="relative">

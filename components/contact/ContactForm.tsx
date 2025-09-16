@@ -15,6 +15,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 import * as z from "zod";
+import { useState } from "react";
 
 const formSchema = z.object({
   fullName: z.string().min(2, { message: "Full name is required" }),
@@ -36,29 +37,34 @@ export default function ContactForm() {
     },
   });
 
+  const [loading, setLoading] = useState(false);
+
   async function onSubmit(values: z.infer<typeof formSchema>) {
     try {
-      const res = await fetch("/api/contact", {
+      setLoading(true);
+      const response = await fetch("https://formspree.io/f/mvgbnajk", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+        },
         body: JSON.stringify(values),
       });
 
-      const data = await res.json();
-      if (data.success) {
-        toast("✅ Message sent successfully!");
+      if (response.ok) {
+        toast.success("Message sent successfully!");
         form.reset();
       } else {
-        toast("❌ Failed to send message.");
+        toast.error("Something went wrong. Please try again.");
       }
-    } catch (err) {
-      console.error(err);
-      toast("⚠️ Something went wrong.");
+    } catch (error) {
+      toast.error("Failed to send message.");
+    } finally {
+      setLoading(false);
     }
   }
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-[url('/contact/stadium-bg.jpg')] bg-cover bg-center">
+    <div className="flex justify-center items-center min-h-screen bg-[url('/contact/indoor-game-cover.png')] bg-cover bg-center">
       <Card className="w-full max-w-lg bg-[#EBECF433] backdrop-blur-md shadow-xl">
         <CardHeader>
           <CardTitle className="text-center text-background text-3xl font-bold">
@@ -144,9 +150,36 @@ export default function ContactForm() {
 
               <Button
                 type="submit"
-                className="w-full bg-cyan-400 hover:bg-cyan-500"
+                className="w-full bg-cyan-400 hover:bg-cyan-500 flex items-center justify-center"
+                disabled={loading}
               >
-                Meet the Squad
+                {loading ? (
+                  <div className="flex items-center gap-2">
+                    <svg
+                      className="animate-spin h-5 w-5 text-white"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <circle
+                        className="opacity-25"
+                        cx="12"
+                        cy="12"
+                        r="10"
+                        stroke="currentColor"
+                        strokeWidth="4"
+                      ></circle>
+                      <path
+                        className="opacity-75"
+                        fill="currentColor"
+                        d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+                      ></path>
+                    </svg>
+                    Sending...
+                  </div>
+                ) : (
+                  "Meet the Squad"
+                )}
               </Button>
             </form>
           </Form>

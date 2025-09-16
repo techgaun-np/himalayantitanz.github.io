@@ -91,12 +91,15 @@ const Footer = () => {
           </p>
           <p className="text-base mt-2 flex items-center gap-2">
             <Phone size={16} />
-            +977 9841234567
+            +977 980897057
           </p>
-          <p className="text-base mt-2 flex items-center gap-2">
+          <a
+            href="https://maps.app.goo.gl/XogaaTGSmJjAhtt48"
+            className="text-base mt-2 flex items-center gap-2"
+          >
             <MapPin size={16} />
             Kathmandu, Nepal
-          </p>
+          </a>
         </div>
 
         {/* Socials */}
@@ -106,6 +109,18 @@ const Footer = () => {
           </h3>
           <div className="flex space-x-2">
             <a
+              href="https://ramro.link/himalayantitanz"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                width={20}
+                height={20}
+                src="/ramrolink_logo.svg"
+                alt="RamroLink"
+              />
+            </a>
+            <a
               href="https://www.facebook.com/profile.php?id=61579319049820"
               target="_blank"
               rel="noopener noreferrer"
@@ -113,7 +128,7 @@ const Footer = () => {
               <FacebookIcon size={20} />
             </a>
             <a
-              href="https://www.twitter.com/himalayantitanz/"
+              href="https://www.tiktok.com/@himalayantitanz"
               target="_blank"
               rel="noopener noreferrer"
             >

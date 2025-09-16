@@ -44,15 +44,15 @@ export default function Navbar() {
       {/* Top strip */}
       <div className="bg-secondary/60 text-black py-1 overflow-hidden relative">
         <div className="whitespace-nowrap animate-marquee font-medium">
-          ⚡ Titanz vs Warriors – Won by 32 Runs | Next Match: Sept 12 vs
-          Kathmandu Kings, TU Ground ⚡
+          ⚡Titanz vs Mixmandu – Won by … | Next Match: Sept 15 – Titanz vs Maya
+          Hetauda Royals, Royal Sports Park ⚡
         </div>
       </div>
 
       {/* Navbar */}
       <nav
         style={{ fontFamily: "Bebas Neue" }}
-        className="flex bg-primary/60 absolute z-20 w-full uppercase items-center justify-between md:justify-center px-6 py-1"
+        className="flex bg-primary z-20 w-full uppercase items-center justify-between md:justify-center px-6 py-1"
       >
         {/* Left links - desktop only */}
         <div className="hidden md:flex gap-6">

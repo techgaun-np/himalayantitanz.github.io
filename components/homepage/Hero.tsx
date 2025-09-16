@@ -12,7 +12,7 @@ export default function Hero() {
         alt="Himalayan Titanz"
         fill
         priority
-        className="object-cover brightness-[0.4]"
+        className="object-cover object-top brightness-[0.4]"
       />
 
       <div className="relative w-full h-full container mx-auto px-4">
