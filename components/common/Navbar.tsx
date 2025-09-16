@@ -52,7 +52,7 @@ export default function Navbar() {
       {/* Navbar */}
       <nav
         style={{ fontFamily: "Bebas Neue" }}
-        className="flex bg-primary/60 absolute z-20 w-full uppercase items-center justify-between md:justify-center px-6 py-1"
+        className="flex bg-primary z-20 w-full uppercase items-center justify-between md:justify-center px-6 py-1"
       >
         {/* Left links - desktop only */}
         <div className="hidden md:flex gap-6">
