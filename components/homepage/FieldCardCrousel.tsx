@@ -12,6 +12,7 @@ type MediaCard = {
   type: "image" | "video";
   title: string;
   description: string;
+  date: string;
 };
 
 const cards: MediaCard[] = [
@@ -22,6 +23,7 @@ const cards: MediaCard[] = [
     title: "Marquee Captains together",
     description:
       "Marquee Captains together - Ishan Pandey of Mixmandu with the Captain of Himalayan Titanz",
+    date: "Sept 5, 2025",
   },
   {
     id: 2,
@@ -30,6 +32,7 @@ const cards: MediaCard[] = [
     title: "Mixmandu - Himalayan Titanz - Encouter",
     description:
       "Exciting highlights from the recent match featuring spectacular catches and boundaries",
+    date: "Sept 5, 2025",
   },
 ];
 
@@ -108,12 +111,25 @@ export default function MediaCarousel() {
                   <p className="text-sm text-white text-opacity-90">
                     {card.description}
                   </p>
-                  {card.type === "video" && (
-                    <div className="flex items-center mt-2 text-xs text-white text-opacity-75">
-                      <Play className="w-3 h-3 mr-1" />
-                      <span>Video Content</span>
-                    </div>
-                  )}
+
+                  <div
+                    className={cn(
+                      "flex items-center mt-1 w-full",
+                      card.type === "video" ? "justify-between" : "justify-end"
+                    )}
+                  >
+                    {card.type === "video" && (
+                      <div className="flex items-center text-xs text-white text-opacity-75">
+                        <Play className="w-3 h-3 mr-1" />
+                        <span>Video Content</span>
+                      </div>
+                    )}
+                    {card.date && (
+                      <p className="text-[10px] text-white text-right">
+                        {card.date}
+                      </p>
+                    )}
+                  </div>
                 </div>
               </div>
             </motion.div>
