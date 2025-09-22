@@ -22,14 +22,14 @@ const cards: MediaCard[] = [
     type: "image",
     title: "Marquee Captains together",
     description:
-      "Marquee Captains together - Ishan Pandey of Mixmandu with the Captain of Himalayan Titanz",
+      "Marquee Captains together - Bhuwan Karki of Himalayan Titanz with the Captain of Mixmandu",
     date: "Sept 5, 2025",
   },
   {
     id: 2,
     media: "/latestfromarena/batting-field-raw.mp4",
     type: "video",
-    title: "Mixmandu - Himalayan Titanz - Encouter",
+    title: "Himalayan Titanz - Mixmandu - Encouter",
     description:
       "Exciting highlights from the recent match featuring spectacular catches and boundaries",
     date: "Sept 5, 2025",
