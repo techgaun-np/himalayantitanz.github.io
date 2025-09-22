@@ -18,7 +18,7 @@ type MediaCard = {
 const cards: MediaCard[] = [
   {
     id: 1,
-    media: "/latestfromarena/captains.jpg",
+    media: "/latestfromarena/twocaptains.png",
     type: "image",
     title: "Marquee Captains together",
     description:
