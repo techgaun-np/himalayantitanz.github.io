@@ -44,7 +44,8 @@ export default function Navbar() {
       {/* Top strip */}
       <div className="bg-secondary/60 text-black py-1 overflow-hidden relative">
         <div className="whitespace-nowrap animate-marquee font-medium">
-          ⚡Won by 1 wicket, next match date “to be scheduled soon” ⚡
+          ⚡Titanz vs Mixmandu – Won by 1 wicket | Next Match: To be scheduled
+          soon – Titanz vs Maya Hetauda Royals, Royal Sports Park ⚡
         </div>
       </div>
 
