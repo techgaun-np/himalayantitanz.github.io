@@ -42,7 +42,7 @@ export default function Navbar() {
   return (
     <header className="w-full text-white shadow-md relative">
       {/* Top strip */}
-      <div className="bg-secondary/60 text-black py-1 overflow-hidden relative">
+      <div className="bg-secondary/60 text-base md:text-lg text-black py-1 overflow-hidden relative">
         <div className="whitespace-nowrap animate-marquee font-medium">
           ⚡Titanz vs Mixmandu – Won by … | Next Match: Sept 15 – Titanz vs Maya
           Hetauda Royals, Royal Sports Park ⚡
