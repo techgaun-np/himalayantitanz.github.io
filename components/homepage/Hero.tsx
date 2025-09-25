@@ -8,7 +8,7 @@ export default function Hero() {
     <section className="relative h-[40rem] md:h-[50rem] w-full flex items-center justify-center text-start text-white">
       {/* 🔹 Background Image */}
       <Image
-        src="/gallary/gallary1.png"
+        src="/homepage/hero-bg.jpg"
         alt="Himalayan Titanz"
         fill
         priority

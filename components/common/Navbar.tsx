@@ -44,8 +44,8 @@ export default function Navbar() {
       {/* Top strip */}
       <div className="bg-secondary/60 text-base md:text-lg text-black py-1 overflow-hidden relative">
         <div className="whitespace-nowrap animate-marquee font-medium">
-          ⚡Titanz vs Mixmandu – Won by … | Next Match: Sept 15 – Titanz vs Maya
-          Hetauda Royals, Royal Sports Park ⚡
+          ⚡Titanz vs Mixmandu – Won by 1 wicket | Next Match: To be scheduled
+          soon – Titanz vs Maya Hetauda Royals, Royal Sports Park ⚡
         </div>
       </div>
 
