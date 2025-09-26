@@ -65,16 +65,16 @@ export default function ContactForm() {
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-[url('/contact/indoor-game-cover.png')] bg-cover bg-center">
-      <Card className="w-full max-w-lg bg-[#EBECF433] backdrop-blur-md shadow-xl">
+      <Card className="w-full max-w-xl bg-[#EBECF433] backdrop-blur-md shadow-xl">
         <CardHeader>
-          <CardTitle className="text-center text-background text-3xl font-bold">
+          <CardTitle className="text-center text-background text-4xl font-bold">
             Leave Us Your Info
           </CardTitle>
-          <p className="text-center text-background text-base">
+          <p className="text-center text-background text-lg">
             and we will get back to you.
           </p>
         </CardHeader>
-        <div className="bg-secondary h-1 w-40 mx-auto" />
+        <div className="bg-secondary h-1 w-48 mx-auto" />
         <CardContent>
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">

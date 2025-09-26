@@ -91,23 +91,23 @@ const PlayerCard = () => {
   };
 
   return (
-    <div className="relative overflow-hidden w-full bg-card ">
+    <div className="relative overflow-hidden  w-full bg-card ">
       <div className="relative grid-cols-2 grid md:flex justify-between container">
         {/* Background Design (Static) */}
-        <div className="flex z-20 md:-translate-y-[10%] md:max-w-lg items-center md:translate-x-[10%] flex-col justify-center">
-          <h1 className="text-white  text-xl md:text-6xl font-medium uppercase">
+        <div className="flex mt-10  md:space-y-3 z-20 md:-translate-y-[10%] md:max-w-lg items-center md:translate-x-[10%] flex-col justify-center">
+          <h1 className="text-white  text-xl md:text-6xl font-bold uppercase">
             {selectedPlayer.title}
           </h1>
-          <p className="text-[#FFFFFFCC] uppercase  font-semibold text-lg md:text-3xl">
+          <p className="text-[#FFFFFFCC] uppercase   font-semibold text-lg mb-2 md:text-4xl">
             {selectedPlayer.name}
           </p>
-          <p className="text-primary-foreground ml-4  text-md md:text-lg">
+          <p className="text-primary-foreground ml-4  text-md md:text-xl">
             {selectedPlayer.desc}
           </p>
         </div>
 
         {/* Main Player Image with Animation */}
-        <div className="relative h-[300px] md:h-[650px] flex justify-center items-end">
+        <div className="relative h-[350px] md:h-[650px] flex justify-center items-end">
           <div className="z-20">
             <AnimatePresence mode="wait">
               <motion.div
@@ -130,10 +130,10 @@ const PlayerCard = () => {
             </AnimatePresence>
           </div>
           <div className="absolute top-0 z-0 flex w-full gap-2">
-            <div className="bg-secondary-foreground h-[300px] md:h-[650px] w-10 md:w-20" />
-            <div className="bg-secondary-foreground h-[300px] md:h-[650px] w-10 md:w-20" />
-            <div className="bg-secondary-foreground h-[300px] md:h-[650px] w-10 md:w-20" />
-            <div className="bg-secondary-foreground h-[300px] md:h-[650px] w-10 md:w-20" />
+            <div className="bg-secondary-foreground h-[350px] md:h-[650px] w-10 md:w-20" />
+            <div className="bg-secondary-foreground h-[350px] md:h-[650px] w-10 md:w-20" />
+            <div className="bg-secondary-foreground h-[350px] md:h-[650px] w-10 md:w-20" />
+            <div className="bg-secondary-foreground h-[350px] md:h-[650px] w-10 md:w-20" />
           </div>
         </div>
 

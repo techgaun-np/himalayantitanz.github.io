@@ -111,9 +111,7 @@ export default function Navbar() {
             onOpenChange={setDrawerOpen}
           >
             <DrawerTrigger asChild>
-              <Button variant="ghost" size="icon">
-                <Menu className="w-6 h-6" />
-              </Button>
+              <Menu className="w-8 h-8" />
             </DrawerTrigger>
             <DialogTitle className="sr-only"></DialogTitle>
 

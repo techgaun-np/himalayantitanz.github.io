@@ -47,7 +47,7 @@ export default function MediaCarousel() {
 
   return (
     <div className="w-full bg-card py-10">
-      <h2 className="text-3xl font-bold text-white mb-6 text-center">
+      <h2 className="text-4xl font-bold text-white px-3 mb-6 text-center">
         Latest from the Arena
       </h2>
 
@@ -107,7 +107,7 @@ export default function MediaCarousel() {
 
                 {/* Content Overlay */}
                 <div className="p-4 top-[62%] absolute z-10">
-                  <h3 className="text-lg font-bold text-white">{card.title}</h3>
+                  <h3 className="text-xl font-bold text-white">{card.title}</h3>
                   <p className="text-sm text-white text-opacity-90">
                     {card.description}
                   </p>

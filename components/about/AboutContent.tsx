@@ -13,22 +13,22 @@ const AboutContent = () => {
     >
       <div className="container py-10 md:flex  items-center ">
         <div className="flex-1 text-white">
-          <h2 className="text-2xl mb-4 md:mb-6 text-center md:text-start md:text-3xl font-bold text-white">
+          <h2 className="text-3xl mb-4 md:mb-6 text-center md:text-start md:text-4xl font-bold text-white">
             Behind the Jerseys
           </h2>
-          <p className="text-lg text-center md:text-start">
+          <p className="text-xl text-center md:text-start">
             Himalayan Titanz is a cricket team built on passion, discipline, and
             teamwork. We bring together players from diverse backgrounds, each
             committed to playing fearless cricket and giving their best on and
             off the field.
           </p>
-          <p className="text-lg text-center md:text-start">
+          <p className="text-xl text-center md:text-start">
             Our mission goes beyond matches — we aim to grow the sport, inspire
             young players, and create a strong community of fans who share our
             love for the game. Every run, every wicket, and every victory is
             dedicated to the people who support us.
           </p>
-          <p className="text-lg text-center md:text-start">
+          <p className="text-xl text-center md:text-start">
             We&apos;re here to play hard, play fair, and build a legacy worth
             cheering for. Welcome to the Titanz family.
           </p>

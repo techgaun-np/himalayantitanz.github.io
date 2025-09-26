@@ -26,11 +26,11 @@ const Sponsers = () => {
       <div className="container mx-auto py-16 px-6 grid md:grid-cols-5 gap-6 items-center relative z-10">
         {/* Left Section */}
         <div className="col-span-2">
-          <h2 className="text-white text-5xl font-bold">
+          <h2 className="text-white text-6xl font-bold">
             Our Proud <br /> <span className="text-black">Sponsors </span>
             for the Indoor Super League (ISL) 2025
           </h2>
-          <p className="text-white/80 text-lg mt-4 max-w-sm">
+          <p className="text-white/80 text-xl font-medium mt-4 max-w-sm">
             We&apos;re backed by brands that believe in our journey
           </p>
         </div>
@@ -40,7 +40,7 @@ const Sponsers = () => {
           {sponsors.map((sponsor) => (
             <div
               key={sponsor.name}
-              className="bg-white rounded-lg shadow-md flex items-center justify-center p-4 w-[120px] md:w-[200px]"
+              className="bg-white rounded-lg shadow-md flex items-center justify-center p-4 w-[145px] md:w-[200px]"
             >
               <Image
                 src={sponsor.logo}

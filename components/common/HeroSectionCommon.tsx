@@ -32,10 +32,10 @@ const HeroSectionCommon: React.FC<HeroSectionProps> = ({
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center text-center h-full px-4">
-        <h2 className="text-white text-4xl md:text-5xl font-bold mb-4">
+        <h2 className="text-white text-5xl md:text-6xl font-bold mb-4">
           {title}
         </h2>
-        <p className="text-white/90 max-w-4xl text-base md:text-xl">
+        <p className="text-white/90 max-w-4xl text-xl md:text-2xl">
           {description}
         </p>
       </div>
