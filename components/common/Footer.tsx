@@ -29,7 +29,16 @@ const Footer = () => {
               className="h-20 w-20 md:h-28 md:w-28"
             />
             <div>
-              <p className="text-base italic">Powered by Techgaun Nepal</p>
+              <p className="text-base italic">
+                Powered by{" "}
+                <Link
+                  href="https://www.techgaun.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Techgaun Nepal
+                </Link>
+              </p>
             </div>
           </div>
           <div>
